@@ -1,0 +1,138 @@
+.promo {
+	padding: 198px 0 0;
+	background: url('../../img/bg/main-screen__bgc.jpg') center center/cover no-repeat;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-height: 960px;
+
+	&__title {
+		color: $white-color;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 140%;
+		margin-right: 380px;
+		margin-bottom: 50px;
+	}
+
+	.timer {
+		display: flex;
+		margin-right: -30px;
+		margin-bottom: 349px;
+
+		&__item {
+			margin-right: 30px;
+			background-color: #121212;
+			padding: 20px 30px;
+		}
+
+		&__time {
+			color: $white-color;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 140%;
+			text-align: center;
+		}
+
+		&__descr {
+			color: $white-color;
+			font-size: 16px;
+			line-height: 140%;
+			text-align: center;
+			opacity: .4;
+		}
+	}
+}
+
+.course {
+	position: relative;
+	background-color: #121212;
+	padding: 36px 0;
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn {
+		background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+		line-height: 150%;
+		margin-right: 81px;
+		transition: 1s all ease-in-out;
+		&:hover{
+			background: #DF5950;
+		}
+	}
+
+	&__people {
+		display: flex;
+		flex-direction: column;
+		margin-right: 81px;
+	}
+
+	&__all-people,
+	&__people-complete {
+		display: flex;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 150%;
+		color: rgba($white-color, $alpha: .4);
+
+		span {
+			color: rgba($white-color, $alpha: 1.0);
+		}
+	}
+
+	&__all-people {
+		span {
+			margin-left: 101px;
+		}
+	}
+
+	&__people-complete {
+		span {
+			margin-left: 30px;
+		}
+	}
+
+	&__money {
+		display: flex;
+		flex-direction: column;
+	}
+    &__money-sum{
+		font-size: 16px;
+		line-height: 150%;
+		color: rgba($white-color, $alpha: .4);
+		span {
+			margin-left: 30px;
+			color: rgba($white-color, $alpha: 1.0);
+		}
+	}
+	&__money-sum::after {
+		content: "";
+		display: block;
+		margin: 8px 0 5px;
+		width: 714px;
+		height: 6px;
+		background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+	}
+	&__money-goal::before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 51%;
+		transform: translateY(-51%);
+		right:274px;
+		display: block;
+		width: 274px;
+		height: 6px;
+		background-color: $white-color;
+	}
+	&__money-goal{
+		display: flex;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 150%;
+		color: rgba($white-color, $alpha: .4);
+	}
+}
