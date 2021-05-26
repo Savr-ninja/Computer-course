@@ -13,40 +13,88 @@
 
 <body>
 	<header class="header">
-		<a href="#" class="header__logo">
-			<img src="img/logo/logo.svg" alt="logo" />
-		</a>
-		<nav class="header__nav nav">
-			<ul class="nav__list">
-				<li>
-					<a href="#" class="nav__link"> Главная</a>
-				</li>
-				<li>
-					<a href="#" class="nav__link"> Курсы</a>
-				</li>
-				<li>
-					<a href="#" class="nav__link">Расписание </a>
-				</li>
-				<li>
-					<a href="#" class="nav__link">Преподаватели </a>
-				</li>
-				<li>
-					<a href="#" class="nav__link"> Рассылка</a>
-				</li>
-				<li>
-					<a href="#" class="nav__link"> Контакты</a>
-				</li>
-			</ul>
-		</nav>
-		<button class="header__btn btn">Зайти в кабинет</button>
+		<div class="header__inner">
+			<a href="#" class="header__logo">
+				<img src="img/logo/logo.svg" alt="logo" />
+			</a>
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li>
+						<a href="#" class="nav__link"> Главная</a>
+					</li>
+					<li>
+						<a href="#" class="nav__link"> Курсы</a>
+					</li>
+					<li>
+						<a href="#" class="nav__link">Расписание </a>
+					</li>
+					<li>
+						<a href="#" class="nav__link">Преподаватели </a>
+					</li>
+					<li>
+						<a href="#" class="nav__link"> Рассылка</a>
+					</li>
+					<li>
+						<a href="#" class="nav__link"> Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="header__btn btn">Зайти в кабинет</button>
+		</div>
 	</header>
 	<section class="promo">
 		<div class="container">
 			<h1 class="promo__title">Первый курс по компьютерной сборке</h1>
+			<div class="timer" id="timer">
+				<div class="timer__item">
+					<div class="timer__time days">18</div>
+					<div class="timer__descr">дней</div>
+				</div>
+				<div class="timer__item">
+					<div class="timer__time hours">18</div>
+					<div class="timer__descr">часов</div>
+				</div>
+				<div class="timer__item">
+					<div class="timer__time minutes">18</div>
+					<div class="timer__descr">минут</div>
+				</div>
+				<div class="timer__item">
+					<div class="timer__time seconds">18</div>
+					<div class="timer__descr"> секунд</div>
+				</div>
+			</div>
+		</div>
+		<div class=" course">
+			<div class="container">
+				<button class="course__btn btn">
+					Заказать курс
+				</button>
+				<div class="course__people">
+					<div class="course__all-people">
+						Учеников всего:
+						<span>200</span>
+					</div>
+					<div class="course__people-complete">
+						Успешно закончили курс:
+						<span>190</span>
+					</div>
+				</div>
+				<div class="course__money">
+					<div class="course__money-sum">
+						Заработано учениками:
+						<span>400 000₽</span>
+					</div>
+					<div class="course__money-goal">
+						<div class="course__money-start">0</div>
+						<div class="course__money-finish">1 000 000₽</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	</section>
+
 	<script src="js/main.min.js"></script>
 </body>
 
