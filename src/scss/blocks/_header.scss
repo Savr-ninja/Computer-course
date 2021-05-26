@@ -1,0 +1,42 @@
+.header {
+  padding: 40px 0 43px;
+  background: url('../../img/bg/main-screen__bgc.jpg') top right/contain no-repeat;
+  min-height: 960px;
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__btn{
+	display: block;	
+	background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+	transition: 1s all ease-in-out;
+	&:hover{
+		background-position: -182px;
+	}
+  }
+  &__logo{
+	  display: block;
+	  transition: .5s all ease-in-out;
+	  &:hover{
+		  transform: rotate(180deg);
+	  }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-right: -5px;
+  }
+  &__link {
+    display: block;
+    margin-right: 56px;
+    line-height: 45px;
+	@include normal-text;
+	transition: .5s all ease-in-out;
+	&:hover {
+		color: #C89AFC;
+	}
+  }
+}
