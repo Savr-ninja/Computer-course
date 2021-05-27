@@ -1,0 +1,40 @@
+.about {
+	margin-top: 935px;
+	padding: 200px 0;
+	position: relative;
+	z-index: 5;
+	background-color: #000;
+
+	&__container {
+		display: flex;
+	}
+
+	&__img {
+		background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+		padding: 30px;
+		img{
+			transform: translateY(66px);
+		}
+	}
+	&__bg-img{
+		background-color: #000;
+	}
+
+	&__text {
+		margin-left: 139px;
+	}
+
+	&__title {
+		color: $white-color;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 140%;
+		margin-bottom: 45px;
+	}
+
+	&__descr {
+		color: $white-color;
+		font-size: 16px;
+		line-height: 160%;
+	}
+}
