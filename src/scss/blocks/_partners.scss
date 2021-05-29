@@ -1,0 +1,67 @@
+.partners {
+	padding: 100px 0 153px;
+	.container{
+		overflow: hidden;
+	}
+	&__logo {
+		display: flex;
+		margin-bottom: 60px;
+		img{
+			transform: rotate(-180deg);
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 140%;
+		color: $white-color;
+		margin-left: 20px;
+	}
+	&__cards{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -120px;
+	}
+	&__card{
+		margin-right: 120px;
+		margin-bottom: 58px;
+	}
+	&__cards::before{
+		position: absolute;
+		content: "";
+		display: block;
+		width: 1296px;
+		border-bottom: 1px solid $white-color;
+		top: 130px;
+		opacity: .3;
+	}
+	&__border-1::before{
+		position: absolute;
+		content: "";
+		height: 300px;
+		display: block;
+		border-right: 1px solid $white-color;
+		left: 230px;
+		opacity: .3;
+	}
+	&__border-2::before{
+		position: absolute;
+		content: "";
+		height: 300px;
+		display: block;
+		border-right: 1px solid $white-color;
+		left: 560px;
+		opacity: .3;
+	}
+	&__border-3::before{
+		position: absolute;
+		content: "";
+		height: 300px;
+		display: block;
+		border-right: 1px solid $white-color;
+		left: 890px;
+		opacity: .3;
+	}
+}
