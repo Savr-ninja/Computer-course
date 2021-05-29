@@ -3,15 +3,15 @@
 	background: #000;
 
 	&__logo {
-
+		position: relative;
 		display: flex;
 		align-items: center;
 		margin-bottom: 49px;
 
 		img {
-			margin-right: 20px;
 			transform: rotate(-140deg);
-			margin-bottom: 50px;
+			position: absolute;
+			bottom: 30px;
 		}
 	}
 
@@ -20,6 +20,7 @@
 		font-size: 48px;
 		line-height: 140%;
 		color: $white-color;
+		margin-left: 100px;
 	}
 
 	&__text {
