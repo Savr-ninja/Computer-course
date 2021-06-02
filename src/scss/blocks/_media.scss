@@ -1,0 +1,342 @@
+@media screen and (max-width:1400px) {
+	.promo {
+		&__title {
+			margin-left: 30px;
+			margin-bottom: 90px;
+		}
+
+		.timer {
+			margin-left: 30px
+		}
+	}
+
+	.about {
+		&__img {
+			margin-left: 40px;
+		}
+
+		&__text {
+			margin-left: 90px;
+		}
+
+		&__descr {
+			max-width: 500px;
+			text-align: justify;
+		}
+	}
+
+	.fast-start {
+		&__logo {
+			justify-content: center;
+
+			img {
+				left: 25%;
+			}
+		}
+
+		&__title {
+			margin-left: 0;
+		}
+
+		&__text {
+			text-align: center;
+		}
+
+		&__result::after {
+			width: 280px;
+		}
+
+		&__inner {
+			margin-left: 40px;
+		}
+
+		&__descr {
+			margin-left: 40px;
+		}
+
+		&__stage {
+			max-width: 265px;
+		}
+	}
+
+	.course {
+		&__money-sum::after {
+			width: 474px;
+
+		}
+
+		&__money-sum::before {
+			right: 100px;
+			width: 160px;
+
+		}
+
+		&__btn {
+			margin-left: 50px;
+		}
+	}
+
+	.profession {
+		&__cards {
+			justify-content: space-around;
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__descr {
+			text-align: justify;
+			max-width: 320px;
+			font-size: 14px;
+		}
+	}
+
+	.partners {
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+
+		}
+
+		&__logo {
+			justify-content: center;
+		}
+
+		&__border-1::before,
+		&__border-2::before,
+		&__border-3::before {
+			display: none;
+		}
+
+		&__cards::before {
+			display: none;
+		}
+
+		&__border-1 {
+			margin-left: 20px;
+		}
+	}
+
+	.teachers {
+		&__logo {
+			justify-content: center;
+
+			img {
+				left: 20%;
+			}
+		}
+
+		&__title {
+			margin-left: 0;
+		}
+
+		&__specialists {
+			margin-left: 100px;
+		}
+
+		&__specialist {
+			margin-right: 160px;
+		}
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.nav {
+		&__list {
+			margin-right: -30px;
+		}
+
+		&__link {
+			margin-right: 30px;
+		}
+	}
+
+	.promo {
+		&__title {
+			font-size: 35px;
+		}
+	}
+
+	.course {
+		&__money-sum::after {
+			width: 304px;
+
+		}
+
+		&__money-sum::before {
+			right: 60px;
+			width: 150px;
+
+		}
+
+		&__btn {
+			margin-left: 50px;
+		}
+	}
+
+	.about {
+		padding-top: 100px;
+		&__img{
+			margin-left: 30px;
+		}
+		&__text {
+			margin-left: 50px;
+		}
+
+		&__title {
+			font-size: 35px;
+		}
+
+		&__descr {
+			max-width: 350px;
+		}
+	}
+
+	.fast-start {
+		padding-bottom: 100px;
+		&__wrapper {
+			display: none;
+		}
+		&__logo{
+			img{
+				left: 20%;
+			}
+		}
+		&__mobile {
+			display: block;
+		}
+	}
+
+	.mobile {
+		&__inner{
+			margin-left: 80px;
+		}
+		&__result{
+			display: flex;
+			flex-direction: column;
+		}
+		&__result::after {
+			content: "";
+			display: block;
+			width: 820px;
+			height: 80px;
+			background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+			margin-bottom: 25px;
+			order: 2;
+		}
+		&__result--75::after{
+			width: 680px;
+		}
+		&__result--50::after{
+			width: 550px;
+		}
+		&__result--0::after{
+			width: 400px;
+		}
+		&__descr{
+			max-width: 800px;
+			margin-bottom: 60px;
+			order: 3;
+		}
+
+		&__descr--75{
+			max-width: 660px;
+		}
+		&__descr--50{
+			max-width: 530px;
+		}
+		&__descr--0{
+			max-width: 380px;
+		}
+		&__precent{
+			margin-bottom: 10px;
+		}
+	}
+	.profession{
+		padding-bottom: 5px;
+		&__header{
+			margin-bottom: 70px;
+			font-size: 35px;
+		
+			text-align: center;
+		}
+		&__cards{
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: 200px;
+		}
+		&__card{
+			position: relative;
+			img{
+				margin-bottom: 30px;
+			}
+		}
+		&__title{
+			text-align: justify;
+		}
+		&__descr{
+			max-width: 400px;
+			margin-bottom: 80px;
+		}
+		&__descr--mb{
+			margin-bottom: 230px;
+		}
+		&__img{
+			position: absolute;
+			left: 50%;
+			top: -60%;
+			transform: translateX(-50%);
+			
+		}
+	}
+	.partners{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__cards{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__border-1{
+			margin-left: 0;
+		}
+		&__border-1, &__border-2, &__border-3, &__border-0{
+			display: flex;
+		}
+	}
+	.training{
+		padding-bottom: 50px;
+		&__title{
+			font-size: 35px;
+		}
+		&__logo{
+			margin-bottom: 50px;
+		}
+	}
+	.teachers{
+		padding-top: 40px;
+		padding-bottom: 50px;
+		&__title{
+			font-size: 35px;
+		}
+		&__logo{
+			img{
+				bottom: 25px;
+			}
+		}
+		&__specialists{
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+		}
+		&__specialist{
+			margin-right: 0;
+		}
+	}
+	.footer{
+		padding-top: 30px;
+		&__title{
+			font-size: 35px;
+		}
+	}
+}
