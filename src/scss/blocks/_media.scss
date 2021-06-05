@@ -567,10 +567,11 @@
 
 		.menu {
 			&__link {
-				display: block;
+				display: inline-block;
 				color: $white-color;
 				margin-bottom: 30px;
 				font-size: 24px;
+				padding: 30px 30px;
 			}
 
 			&__body {
@@ -647,12 +648,16 @@
 			transform: rotate(-45deg);
 			}
 	}
-
 	.nav {
 		display: none;
 	}
 
 	.promo {
+		.timer{
+			&__item{
+				padding: 10px 15px;
+			}
+		}
 		&__title {
 			font-size: 28px;
 			margin-right: 0;
