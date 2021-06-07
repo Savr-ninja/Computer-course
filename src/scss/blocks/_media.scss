@@ -65,11 +65,6 @@
 
 		}
 
-		&__money-sum::before {
-			right: 100px;
-			width: 160px;
-
-		}
 
 		&__btn {
 			margin-left: 50px;
@@ -164,11 +159,6 @@
 
 		}
 
-		&__money-sum::before {
-			right: 60px;
-			width: 150px;
-
-		}
 
 		&__btn {
 			margin-left: 50px;
@@ -444,13 +434,6 @@
 			width: 400px;
 		}
 
-		&__money-sum::before {
-			height: 10px;
-			right: 220px;
-			top: 49%;
-			transform: translateY(-49%);
-			width: 200px;
-		}
 
 		&__money-goal {
 			font-size: 20px;
@@ -627,12 +610,13 @@
 		}
 
 		.menu__close span {
-		 position: relative;
-		 bottom: 60px;
-		 left: 100%;
+			position: relative;
+			bottom: 60px;
+			left: 100%;
 		}
 
-		#click::after, #click::before {
+		#click::after,
+		#click::before {
 			position: absolute;
 			left: 15px;
 			content: ' ';
@@ -641,23 +625,27 @@
 			background-color: $white-color;
 			transition: all .5s ease-in-out;
 		}
+
 		#click:before {
 			transform: rotate(45deg);
-			}
-			#click:after {
+		}
+
+		#click:after {
 			transform: rotate(-45deg);
-			}
+		}
 	}
+
 	.nav {
 		display: none;
 	}
 
 	.promo {
-		.timer{
-			&__item{
+		.timer {
+			&__item {
 				padding: 10px 15px;
 			}
 		}
+
 		&__title {
 			font-size: 28px;
 			margin-right: 0;
@@ -669,9 +657,7 @@
 			margin-left: 50px;
 		}
 
-		&__money-sum::before {
-			right: 130px;
-		}
+		
 	}
 
 	.fast-start {
@@ -792,3 +778,379 @@
 		padding-top: 25px;
 	}
 }
+
+@media screen and (max-width:578px) {
+	.promo {
+		&__title {
+			font-size: 26px;
+		}
+
+		.timer {
+			margin-left: 5px;
+
+			&__item {
+				margin-right: 10px;
+			}
+
+			&__time {
+				font-size: 26px;
+			}
+
+			&__descr {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.course {
+		&__all-people {
+			flex-direction: column;
+			justify-content: start;
+
+			span {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+		&__people-complete {
+			flex-direction: column;
+			justify-content: start;
+
+			span {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+		&__money-sum {
+			font-size: 20px;
+			display: flex;
+			flex-direction: column;
+
+			span {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+		
+
+		&__money-sum::after {
+			width: 250px;
+		}
+	}
+	.about{
+		padding-bottom: 50px;
+		&__img{
+			padding: 15px;
+			img{
+				transform: translateY(40px);
+			}
+		}
+		&__descr{
+			max-width: 260px;
+			font-size: 12px;
+		}
+		&__title{
+			text-align: center;
+			font-size: 26px;
+		}
+	}
+	.fast-start{
+		&__title{
+			font-size: 26px;
+		}
+		&__text{
+			max-width: 260px;
+		}
+		.mobile{
+			&__precent{
+				font-size: 26px;
+			}
+			&__result::after {
+				width: 250px;
+	
+			}
+	
+			&__result--75::after {
+				width: 210px;
+			}
+	
+			&__result--50::after {
+				width: 170px;
+			}
+	
+			&__result--0::after {
+				width: 130px;
+			}
+	
+			&__descr {
+				max-width: 250px;
+				margin-bottom: 60px;
+				order: 3;
+				font-size: 12px;
+			}
+	
+			&__descr--75 {
+				max-width: 250px;
+			}
+	
+			&__descr--50 {
+				max-width: 250px;
+			}
+	
+			&__descr--0 {
+				max-width: 250px;
+			}
+		}
+	}
+	.profession{
+		&__header{
+			font-size: 26px;
+		}
+		&__title{
+			max-width: 260px;
+			font-size: 16px;
+			text-align: center;
+		}
+		&__descr{
+			font-size: 12px;
+			max-width: 250px;
+		}
+	}
+	.partners{
+		&__title{
+			font-size: 26px;
+			text-align: center;
+		}
+		&__border-3, &__border-0{
+			display: none;
+		}
+	}
+	.training{
+		&__title{
+			font-size: 26px;
+		}
+		&__call{
+			font-size: 12px;
+			max-width: 260px;
+		}
+		&__header{
+			font-size: 12px;
+		}
+		&__header--left{
+			text-align: left;
+		}
+		&__descr{
+			font-size: 14px;
+			max-width: 140px;
+		}
+		&__descr--left::after{
+			left: 158px;
+		}
+		&__descr--right::after{
+			right: 158px;
+		}
+		&__descr--right{
+			text-align: left;
+		}
+		&__programm {
+			&--left {
+				margin-right: 15px;
+			}
+
+			&--right {
+				margin-left: 15px;
+			}
+		}
+	}
+	.teachers{
+		&__logo{
+			margin-bottom: 70px;
+		}
+		&__title{
+			font-size: 26px;
+		}
+		&__name{
+			font-size: 18px;
+		}
+		&__descr{
+			font-size: 12px;
+		}
+	}
+	.footer{
+		&__title{
+			font-size: 26px;
+		}
+		&__descr{
+			font-size: 12px;
+		}
+		&__form{
+			position: static;
+			width: 250px;
+			margin-bottom: 30px;
+			input{
+				width: 100%;
+				border-radius: 50px;
+				margin-bottom: 30px;
+				font-size: 12px;
+			}
+		}
+		&__btn{
+			position: static;
+		}
+		.social{
+			margin-right: 0;
+			margin-top: 70px;
+			&__icon{
+				margin-right: 20px;
+			}
+		}
+	}
+}
+@media screen and (max-width:320px) {	
+	.promo{
+		.timer {
+			margin-left: 7px;
+	
+			&__item {
+				margin-right: 10px;
+				padding: 5px 10px;
+			}
+	
+			&__time {
+				font-size: 20px;
+			}
+	
+			&__descr {
+				font-size: 10px;
+			}
+		}
+	}
+	.course{
+		.container{
+			margin-left: 25px;
+		}
+		&__money-sum::after{
+			width: 200px;
+		}
+		&__all-people {
+			flex-direction: column;
+			justify-content: start;
+
+			span {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+		&__people-complete {
+			font-size: 16px;
+
+			span {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+		&__money-sum{
+			font-size: 16px;
+		}
+		&__money-goal{
+			font-size: 16px;
+		}
+	}
+	.about{
+		padding-bottom: 10px;
+		&__text{
+			max-width: 240px;
+		}
+	}
+	.fast-start{
+		&__title{
+			font-size: 20px;
+		}
+		&__text{
+			font-size: 10px;
+		}
+		.mobile{
+			&__result::after {
+				width: 250px;
+	
+			}
+	
+			&__result--75::after {
+				width: 210px;
+			}
+	
+			&__result--50::after {
+				width: 170px;
+			}
+	
+			&__result--0::after {
+				width: 130px;
+			}
+	
+			&__descr {
+				max-width: 230px;
+				margin-bottom: 60px;
+				order: 3;
+				font-size: 10px;
+				text-align: justify;
+			}
+	
+			&__descr--75 {
+				max-width: 230px;
+			}
+	
+			&__descr--50 {
+				max-width: 230px;
+			}
+	
+			&__descr--0 {
+				max-width: 230px;
+			}
+		}
+	}
+	.training{
+		padding-bottom: 10px;
+		&__header{
+			font-size: 10px;
+		}
+		&__descr{
+			font-size: 12px;
+		}
+		&__descr--left::after{
+			left: 143px;
+		}
+		&__descr--right::after{
+			right: 143px;
+		}
+		&__programm {
+			&--left {
+				margin-right: 10px;
+			}
+
+			&--right {
+				margin-left: 10px;
+			}
+		}
+	}
+	.teachers{
+		padding-top: 1px;
+		&__title{
+			font-size: 20px;
+		}
+	}
+	.footer{
+		&__title{
+			font-size: 20px;
+		}
+		.social{
+			&__icon{
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
