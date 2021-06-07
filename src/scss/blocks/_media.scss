@@ -17,6 +17,9 @@
 	.about {
 		&__img {
 			margin-left: 40px;
+			img{
+				max-width: 100%;
+			}
 		}
 
 		&__text {
