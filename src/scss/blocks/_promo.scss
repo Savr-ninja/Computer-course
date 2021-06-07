@@ -113,20 +113,9 @@
 		margin: 8px 0 5px;
 		width: 714px;
 		height: 6px;
-		background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+		background: linear-gradient(94.78deg, #DF5950 5%, #451046 40%, $white-color 40.4%, $white-color  );
 	}
-	&__money-sum::before{
-		content: "";
-		display: block;
-		position: absolute;
-		top: 51%;
-		transform: translateY(-51%);
-		right:160px;
-		display: block;
-		width: 274px;
-		height: 6px;
-		background-color: $white-color;
-	}
+	
 	&__money-goal{
 		display: flex;
 		justify-content: space-between;
